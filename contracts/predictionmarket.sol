@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 contract Project is ReentrancyGuard, Ownable, Pausable {
     // Your contract variables here
     string public name;
-    string public description;
+    string public description
     uint256 public targetAmount;
     uint256 public currentAmount;
     uint256 public deadline;
