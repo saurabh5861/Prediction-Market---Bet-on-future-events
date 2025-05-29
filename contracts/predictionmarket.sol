@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/security/Pausable.contract Project is Reentrancy
     // Your contract variables here
     string public name;
     string public description
-    uint256 public targetAmount;
+    uint256 public targetAmoun
     uint256 public currentAmount;
     uint256 public deadline;
     bool public isCompleted;
