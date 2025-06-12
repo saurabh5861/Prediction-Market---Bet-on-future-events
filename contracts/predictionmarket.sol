@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/security/Pausable.contract Project is Reentrancy
     string public description
     uint256 public targetAmoun
     uint256 public currentAmount
-    uint256 public deadline;
+    uint256 public deadli
     bool public isCompleted;
     
     // Events
