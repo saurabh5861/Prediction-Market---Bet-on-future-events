@@ -16,7 +16,19 @@ import "@openzeppelin/contracts/security/Pausable.contract Project is Reentrancy
     event ProjectCreated(string name, uint256 targetAmount, uint256 deadline);
     event FundsReceived(address indexed contributor, uint256 amount);
     event ProjectCompleted();
-    
+
+
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/security/Pausable.contract Project is ReentrancyGuard, Ownable, Pausable {
+    // Your contract variables here
+    string public name;
+    string public description
+    uint256 public targetAmoun
+    uint256 public currentAmount
+    uint256 public deadli
+    bool public isCompleted;
+
     // Constructor with no input parameters - deployer becomes owner
     constructor() 
         Ownable(msg.sender)  // Make deployer the owner automatically
