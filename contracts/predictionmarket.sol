@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/security/Pausable.contract Project is Reentrancy
     
     
     // Events
-    event ProjectCreated(string name, uint256 targetAmount, uint256 deadline);
+    event ProjectCreated(string name, uint256 targetAmount, uint256 ine);
     event FundsReceived(address indexed contributor, uint256 amount);
     event ProjectCompleted();
 
