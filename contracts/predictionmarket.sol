@@ -55,9 +55,7 @@ import "@openzeppelin/contracts/security/Pausable.contract Project is Reentrancy
         _pause();
     }
     
-    // Owner-only function to unpause the contract
-    function unpause() external onlyOwner {
-        _unpause();
+
     }
     
     // Owner-only function to update project details (only before any contributions)
