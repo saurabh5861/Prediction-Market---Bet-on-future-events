@@ -76,13 +76,6 @@ import "@openzeppelin/contracts/security/Pausable.contract Project is Reentrancy
         emit ProjectCreated(_name, _targetAmount, deadline);
     }
     
-    // Owner-only function to withdraw funds (example)
-    function withdrawFunds() external onlyOwner nonReentrant {
-        require(isCompleted, "Project not completed yet");
-        uint256 amount = address(this).balance;
-        require(amount > 0, "No funds to withdraw");
-        
-        (bool success, ) = payable(owner()).call{value: amount}("");
-        require(success, "Withdrawal failed");
+
     }
 }
