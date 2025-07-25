@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: mit
 pragma solidity ^0.8.19;
-
 contract CarbonCreditMarketplace {
     struct CarbonCredit {
         uint256 id;
