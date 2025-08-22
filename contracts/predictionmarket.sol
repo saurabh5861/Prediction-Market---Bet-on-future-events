@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: 
+// SPDX-License-Identifier: mit
 pragma solidity ^0.8.19;
 contract CarbonCreditMarketplace {
     struct CarbonCredit {
@@ -256,6 +256,7 @@ contract CarbonCreditMarketplace {
         owner = _newOwner;
     }
 }
+
 
 
 
